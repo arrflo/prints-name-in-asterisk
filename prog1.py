@@ -21,13 +21,13 @@ for r in range (6):
         if (c == 0) or (c == 1 and (r == 0 or r == 3) ) or (c == 2 and r != 0) and (c == 2 and r != 3):
             chr_R1 [r][c] = "*"
 
-for i in range (6):
-    for j in range (3):
-        print(chr_A[i][j], end = " ")
+for j in range (6):
+    for i in range (3):
+        print(chr_A[j][i], end = " ")
     print (end = "  ")
-    for j in range (3):
-        print (chr_R[i][j], end = " ")
+    for i in range (3):
+        print (chr_R[j][i], end = " ")
     print (end = "  ")
-    for j in range (3):
-        print (chr_R1[i][j], end = " ")
+    for i in range (3):
+        print (chr_R1[j][i], end = " ")
     print ()
